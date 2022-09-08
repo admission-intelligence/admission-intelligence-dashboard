@@ -1,4 +1,4 @@
-package org.pophealth.api;
+package org.admitintel.api;
 
 import java.util.List;
 import javax.inject.Inject;
@@ -8,8 +8,8 @@ import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
-import org.pophealth.model.Alert;
-import org.pophealth.service.AlertService;
+import org.admitintel.model.Alert;
+import org.admitintel.service.AlertService;
 
 @Path("/alerts")
 public class AlertsResource {

@@ -1,4 +1,4 @@
-package org.pophealth.model;
+package org.admitintel.model;
 
 import io.quarkus.hibernate.orm.panache.PanacheEntity;
 import java.time.LocalDate;
@@ -7,13 +7,12 @@ import lombok.Data;
 
 @Data
 @Entity
-public class Reward extends PanacheEntity {
+public class Alert extends PanacheEntity {
 
-
-    private String rewardName;
-    private Double value;
-    private boolean fulfilled;
-    private String category;
+    private String alertName;
+    private String alertType;
+    private boolean open;
+    private String severity;
     private LocalDate measurementDate;
 
 }

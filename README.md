@@ -1,7 +1,7 @@
 # Population Health Dashboard 
 
-This Quarkus project is the dashboard for the population health system with serverless decision services. 
-See (https://popluation-health.github.io/pop-health-docs/) for getting started and documentation.
+This Quarkus project is the dashboard for the admission intelligence hackathon.
+See (https://admission-intelligence.github.io/admission-intelligence-docs/) for getting started and documentation.
 
 ## Running the application in dev mode
 

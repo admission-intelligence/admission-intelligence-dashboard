@@ -1,4 +1,4 @@
-package org.pophealth.service;
+package org.admitintel.service;
 
 import java.text.NumberFormat;
 import java.time.format.DateTimeFormatter;
@@ -10,9 +10,9 @@ import java.util.Map;
 import java.util.stream.Collectors;
 import javax.enterprise.context.ApplicationScoped;
 import javax.transaction.Transactional;
-import org.pophealth.model.Reward;
-import org.pophealth.model.RewardCategoryGroup;
-import org.pophealth.model.RewardProgram;
+import org.admitintel.model.Reward;
+import org.admitintel.model.RewardCategoryGroup;
+import org.admitintel.model.RewardProgram;
 
 @ApplicationScoped
 public class RewardsService {

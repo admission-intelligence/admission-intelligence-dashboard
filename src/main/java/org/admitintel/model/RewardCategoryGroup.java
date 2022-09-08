@@ -1,4 +1,4 @@
-package org.pophealth.model;
+package org.admitintel.model;
 
 public class RewardCategoryGroup {
 

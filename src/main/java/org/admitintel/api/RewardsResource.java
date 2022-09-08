@@ -1,4 +1,4 @@
-package org.pophealth.api;
+package org.admitintel.api;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,9 +11,9 @@ import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
-import org.pophealth.model.Reward;
-import org.pophealth.model.RewardProgram;
-import org.pophealth.service.RewardsService;
+import org.admitintel.model.Reward;
+import org.admitintel.model.RewardProgram;
+import org.admitintel.service.RewardsService;
 
 @Path("/rewards")
 public class RewardsResource {

@@ -1,4 +1,4 @@
-package org.pophealth.dashboard;
+package org.admitintel.dashboard;
 
 import io.quarkus.test.junit.QuarkusTest;
 import org.junit.jupiter.api.Test;

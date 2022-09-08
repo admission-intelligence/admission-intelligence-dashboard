@@ -1,9 +1,9 @@
-package org.pophealth.service;
+package org.admitintel.service;
 
 import java.util.List;
 import javax.enterprise.context.ApplicationScoped;
 import javax.transaction.Transactional;
-import org.pophealth.model.Alert;
+import org.admitintel.model.Alert;
 
 @ApplicationScoped
 public class AlertService {
