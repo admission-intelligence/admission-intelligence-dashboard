@@ -1,4 +1,4 @@
-# Population Health Dashboard 
+# Admission Intelligence Dashboard 
 
 This Quarkus project is the dashboard for the admission intelligence hackathon.
 See (https://admission-intelligence.github.io/admission-intelligence-docs/) for getting started and documentation.

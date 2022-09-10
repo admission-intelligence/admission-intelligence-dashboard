@@ -9,14 +9,14 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Population Health</title>
+  <title>Admission Intelligence</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
   <!-- Custom styles for this template-->
-  <link href="css/sb-admin-2.min.css" rel="stylesheet">
+  <link href="css/sb-admin-2.css" rel="stylesheet">
 
   <link rel="apple-touch-icon" sizes="57x57" href="/favico/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/favico/apple-icon-60x60.png">
@@ -49,25 +49,18 @@
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
         <div class="sidebar-brand-icon">
-          <img class="brand-image" src="img/pop-health-200x200.png" >
+          <img class="brand-image" src="img/LogoNoBG.png" >
         </div>
       </a>
 
       <!-- Divider -->
       <hr class="sidebar-divider my-0">
 
-      <!-- Nav Item - Tables -->
-      <li class="nav-item">
-        <a class="nav-link" href="http://localhost:8082/fitAuth" target="_blank">
-          <i class="fas fa-fw fa-table"></i>
-          <span>Register</span></a>
-      </li>
-
       <!-- Nav Item - Dashboard -->
       <li class="nav-item active">
         <a class="nav-link" href="index.html">
           <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Rewards Dashboard</span></a>
+          <span>Admission Trends</span></a>
       </li>
 
 
@@ -161,14 +154,14 @@
       <li class="nav-item">
         <a class="nav-link" href="rewards-tables.html">
           <i class="fas fa-fw fa-table"></i>
-          <span>Rewards Data</span></a>
+          <span>Alerts</span></a>
       </li>
 
       <!-- Nav Item - Tables -->
       <li class="nav-item">
         <a class="nav-link" href="alerts-tables.html">
           <i class="fas fa-fw fa-table"></i>
-          <span>Alerts Data</span></a>
+          <span>Automated Comms</span></a>
       </li>
 
       <!-- Heading -->
@@ -187,7 +180,7 @@
       <li class="nav-item">
         <a class="nav-link" href="https://admission-intelligence.github.io/admission-intelligence-docs/" target="_blank">
           <i class="fas fa-fw fa-file"></i>
-          <span>Technical Docs</span></a>
+          <span>Reference Arch. and Docs</span></a>
       </li>
 
       <!-- Divider -->
@@ -360,7 +353,7 @@
             <!-- Nav Item - User Information -->
             <li class="nav-item dropdown no-arrow">
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Valerie Luna</span>
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Demo User</span>
                 <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
               </a>
               <!-- Dropdown - User Information -->
@@ -395,20 +388,19 @@
 
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Rewards Dashboard</h1>
+            <h1 class="h3 mb-0 text-gray-800">Admission Trends</h1>
             <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
           </div>
 
           <!-- Content Row -->
           <div class="row">
-
             <!-- Earnings (Monthly) Card Example -->
             <div class="col-xl-3 col-md-6 mb-4">
               <div class="card border-left-primary shadow h-100 py-2">
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Total Rewards Fulfilled</div>
+                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Population Admissions</div>
                       <div id="rewards-fulfilled" class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div>
                     </div>
                     <div class="col-auto">
@@ -425,7 +417,7 @@
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Rewards Budget</div>
+                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Est. Preventable Cost</div>
                       <div id="rewards-budget" class="h5 mb-0 font-weight-bold text-gray-800"></div>
                     </div>
                     <div class="col-auto">
@@ -442,7 +434,7 @@
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Team Reward Rate</div>
+                      <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Est. Preventable Admissions</div>
                       <div class="row no-gutters align-items-center">
                         <div class="col-auto">
                           <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
@@ -468,7 +460,7 @@
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Rewards To Fulfill</div>
+                      <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Open Investigations</div>
                       <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
                     </div>
                     <div class="col-auto">
@@ -489,7 +481,7 @@
               <div class="card shadow mb-4">
                 <!-- Card Header - Dropdown -->
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-primary">Rewards Totals</h6>
+                  <h6 class="m-0 font-weight-bold text-primary">Preventable Admission Cost</h6>
                   <div class="dropdown no-arrow">
                     <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
@@ -517,7 +509,7 @@
               <div class="card shadow mb-4">
                 <!-- Card Header - Dropdown -->
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-primary">Reward Categories</h6>
+                  <h6 class="m-0 font-weight-bold text-primary">Preventable Admission Categories</h6>
                   <div class="dropdown no-arrow">
                     <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
@@ -538,13 +530,13 @@
                   </div>
                   <div class="mt-4 text-center small">
                     <span class="mr-2">
-                      <i class="fas fa-circle text-primary"></i> Steps
+                      <i class="fas fa-circle text-primary"></i> Diabetes
                     </span>
                     <span class="mr-2">
-                      <i class="fas fa-circle text-success"></i> Move Minutes
+                      <i class="fas fa-circle text-success"></i> COPD
                     </span>
                     <span class="mr-2">
-                      <i class="fas fa-circle text-info"></i> Heart Rate
+                      <i class="fas fa-circle text-info"></i> Heart Failure
                     </span>
                   </div>
                 </div>
@@ -698,7 +690,7 @@
       <footer class="sticky-footer bg-white">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Population Health 2020</span>
+            <span>Copyright &copy; Admission Intelligence 2020</span>
           </div>
         </div>
       </footer>
