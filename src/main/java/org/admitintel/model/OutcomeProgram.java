@@ -6,8 +6,8 @@ import lombok.Data;
 
 @Data
 @Entity
-public class RewardProgram extends PanacheEntity {
+public class OutcomeProgram extends PanacheEntity {
 
-    public Double rewardsBudget;
+    public Double estimatedOutcomeCost;
 
 }

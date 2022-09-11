@@ -7,13 +7,14 @@ import lombok.Data;
 
 @Data
 @Entity
-public class Alert extends PanacheEntity {
+public class Outcome extends PanacheEntity {
+
 
     private String alertName;
     private String alertType;
-    private String channels;
-    private String severity;
+    private String recommendedAction;
     private String triggers;
+    private String severity;
     private String category;
     private String patientId = UUID.randomUUID().toString().substring(0,10);
 

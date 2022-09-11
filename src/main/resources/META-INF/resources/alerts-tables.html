@@ -68,9 +68,11 @@
         dataSrc: ''
       },
       columns: [
+        { data: 'patientId' },
         { data: 'alertName' },
         { data: 'alertType' },
-        { data: 'open' },
+        { data: 'channels' },
+        { data: 'triggers' },
         { data: 'severity' }
       ]
     } );
@@ -187,9 +189,9 @@
 
       <!-- Nav Item - Tables -->
       <li class="nav-item">
-        <a class="nav-link" href="rewards-tables.html">
+        <a class="nav-link" href="care-alerts.html">
           <i class="fas fa-fw fa-table"></i>
-          <span>Alerts</span></a>
+          <span>Care Alerts</span></a>
       </li>
 
       <!-- Nav Item - Tables -->
@@ -436,17 +438,20 @@
                 <table class="table table-bordered" id="alertsDataTable" width="100%" cellspacing="0">
                   <thead>
                     <tr>
+                      <th>Patient Id</th>
                       <th>Alert Name</th>
                       <th>Alert Type</th>
                       <th>Communication Type</th>
+                      <th>Triggers</th>
                       <th>Severity</th>
                     </tr>
                   </thead>
                   <tfoot>
                     <tr>
-                      <th>Alert Name</th>
+                      <th>Patient id</th>
                       <th>Alert Type</th>
                       <th>Communication Type</th>
+                      <th>Triggers</th>
                       <th>Severity</th>
                     </tr>
                   </tfoot>

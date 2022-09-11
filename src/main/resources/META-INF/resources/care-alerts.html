@@ -58,15 +58,16 @@
 <script>
 
   $(document).ready(function() {
-    $('#rewardsDataTable').DataTable( {
+    $('#outcomesDataTable').DataTable( {
       ajax: {
-        url: '/rewards',
+        url: '/outcomes',
         dataSrc: ''
       },
       columns: [
-        { data: 'rewardName' },
-        { data: 'value' },
-        { data: 'fulfilled' },
+        { data: 'patientId' },
+        { data: 'alertName' },
+        { data: 'alertType' },
+        { data: 'triggers' },
         { data: 'category' }
       ]
     } );
@@ -184,9 +185,9 @@
 
       <!-- Nav Item - Tables -->
       <li class="nav-item">
-        <a class="nav-link" href="rewards-tables.html">
+        <a class="nav-link" href="care-alerts.html">
           <i class="fas fa-fw fa-table"></i>
-          <span>Alerts</span></a>
+          <span>Care Alerts</span></a>
       </li>
 
       <!-- Nav Item - Tables -->
@@ -429,9 +430,10 @@
             </div>
             <div class="card-body">
               <div class="table-responsive">
-                <table class="table table-bordered" id="rewardsDataTable" width="100%" cellspacing="0">
+                <table class="table table-bordered" id="outcomesDataTable" width="100%" cellspacing="0">
                   <thead>
                     <tr>
+                        <th>Patient Id</th>
                       <th>Alert Type</th>
                       <th>Recommended Action</th>
                       <th>Trigger(s)</th>
@@ -440,6 +442,7 @@
                   </thead>
                   <tfoot>
                     <tr>
+                        <th>Patient Id</th>
                       <th>Alert Type</th>
                       <th>Recommended Action</th>
                       <th>Trigger(s)</th>

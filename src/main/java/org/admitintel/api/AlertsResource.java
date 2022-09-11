@@ -26,16 +26,6 @@ public class AlertsResource {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public List<Alert> getAlerts() {
-//
-//        for(int i=0;i<20;i++) {
-//            Alert test = new Alert();
-//            test.setAlertName("Weight");
-//            test.setAlertType("INFO");
-//            test.setOpen(true);
-//            test.setSeverity("high");
-//
-//            alertService.createAlert(test);
-//        }
 
         return alertService.getAllAlerts();
     }
